@@ -1,0 +1,46 @@
+DEBUG RS - deno_config::deno_json:1372 - Config file found at '/Users/quatrava/Dev/vitepress/vitepress-deno/deno.jsonc'
+DEBUG RS - deno::args:520 - Finished config loading.
+DEBUG RS - deno::cache::cache_db:174 - Opening cache /Users/quatrava/Library/Caches/deno/dep_analysis_cache_v2...
+DEBUG RS - deno::cache::cache_db:174 - Opening cache /Users/quatrava/Library/Caches/deno/node_analysis_cache_v2...
+DEBUG RS - deno::cache::cache_db:174 - Opening cache /Users/quatrava/Library/Caches/deno/v8_code_cache_v2...
+DEBUG RS - deno_resolver::npmrc:115 - .npmrc found at: '/Users/quatrava/.npmrc'
+DEBUG RS - deno_resolver::npmrc:214 - Only home .npmrc file found
+DEBUG RS - deno_resolver::workspace:934 - Workspace config generated this import map {
+  "imports": {
+    "@vueuse/core": "npm:@vueuse/core@^15.0.0",
+    "@vueuse/core/": "npm:/@vueuse/core@^15.0.0/",
+    "@vue/compiler-dom": "npm:@vue/compiler-dom@^3.5.44",
+    "@vue/compiler-dom/": "npm:/@vue/compiler-dom@^3.5.44/",
+    "vitepress": "npm:vitepress@^2.0.0-alpha.21",
+    "vitepress/": "npm:/vitepress@^2.0.0-alpha.21/",
+    "vue": "npm:vue@^3.5.43",
+    "vue/": "npm:/vue@^3.5.43/"
+  }
+}
+DEBUG RS - import_map:1130 - Specifier "main.js" was not mapped in import map.
+DEBUG RS - deno_npm_installer:426 - All package.json deps resolvable. Skipping top level install.
+DEBUG RS - deno::worker:116 - main_module file:///Users/quatrava/Dev/vitepress/vitepress-deno/vitepress-ssg-deadlock-repro/toy-deadlock/main.js
+DEBUG RS - import_map:1130 - Specifier "file:///Users/quatrava/Dev/vitepress/vitepress-deno/vitepress-ssg-deadlock-repro/toy-deadlock/main.js" was not mapped in import map.
+DEBUG RS - deno::module_loader:186 - Preparing module load.
+DEBUG RS - deno::module_loader:224 - Building module graph.
+DEBUG RS - deno_cache_dir::file_fetcher:581 - FileFetcher::fetch_no_follow - specifier: file:///Users/quatrava/Dev/vitepress/vitepress-deno/vitepress-ssg-deadlock-repro/toy-deadlock/main.js
+DEBUG RS - import_map:1130 - Specifier "node:module" was not mapped in import map.
+DEBUG RS - deno::module_loader:269 - Prepared module load.
+DEBUG RS - deno::module_loader:614 - V8 code cache hit for ES module: file:///Users/quatrava/Dev/vitepress/vitepress-deno/vitepress-ssg-deadlock-repro/toy-deadlock/main.js, [5150275797019556768]
+import(p1.js) starting...
+DEBUG RS - import_map:1130 - Specifier "file:///Users/quatrava/Dev/vitepress/vitepress-deno/vitepress-ssg-deadlock-repro/toy-deadlock/p1.js" was not mapped in import map.
+DEBUG RS - import_map:1130 - Specifier "file:///Users/quatrava/Dev/vitepress/vitepress-deno/vitepress-ssg-deadlock-repro/toy-deadlock/p1.js" was not mapped in import map.
+import(p2.js) starting...
+DEBUG RS - import_map:1130 - Specifier "file:///Users/quatrava/Dev/vitepress/vitepress-deno/vitepress-ssg-deadlock-repro/toy-deadlock/p2.js" was not mapped in import map.
+DEBUG RS - import_map:1130 - Specifier "file:///Users/quatrava/Dev/vitepress/vitepress-deno/vitepress-ssg-deadlock-repro/toy-deadlock/p2.js" was not mapped in import map.
+DEBUG RS - deno::module_loader:186 - Preparing module load.
+DEBUG RS - deno::module_loader:224 - Building module graph.
+DEBUG RS - deno_cache_dir::file_fetcher:581 - FileFetcher::fetch_no_follow - specifier: file:///Users/quatrava/Dev/vitepress/vitepress-deno/vitepress-ssg-deadlock-repro/toy-deadlock/p1.js
+DEBUG RS - deno::module_loader:269 - Prepared module load.
+DEBUG RS - deno::module_loader:186 - Preparing module load.
+DEBUG RS - deno::module_loader:224 - Building module graph.
+DEBUG RS - deno_cache_dir::file_fetcher:581 - FileFetcher::fetch_no_follow - specifier: file:///Users/quatrava/Dev/vitepress/vitepress-deno/vitepress-ssg-deadlock-repro/toy-deadlock/p2.js
+DEBUG RS - deno::module_loader:614 - V8 code cache hit for ES module: file:///Users/quatrava/Dev/vitepress/vitepress-deno/vitepress-ssg-deadlock-repro/toy-deadlock/p1.js, [2008604267610711791]
+import(p1.js) settled
+Starting createRequire (p2 import still in flight)...
+DEBUG RS - import_map:1130 - Specifier "file:///Users/quatrava/Dev/vitepress/vitepress-deno/vitepress-ssg-deadlock-repro/toy-deadlock/p1.js" was not mapped in import map.

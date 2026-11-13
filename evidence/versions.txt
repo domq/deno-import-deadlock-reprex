@@ -1,0 +1,7 @@
+deno 2.7.5 (stable, release, x86_64-apple-darwin)
+v8 14.6.202.9-rusty
+typescript 5.9.2
+ProductName:		macOS
+ProductVersion:		15.8.1
+BuildVersion:		24H32
+x86_64
